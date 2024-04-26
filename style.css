@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(27,8,12);
+    background: linear-gradient(70deg, rgba(27,8,12,1) 4%, rgba(128,188,193,0.7788194444444445) 46%, rgba(9,2,2,1) 100%);
+    font-family: 'Times New Roman', Times, serif;
+    height: 100vh;
+}
+
+canvas {
+    border: 2px solid steelblue;
+    background-color: whitesmoke;
+  float: right;
+  display: block;
+  
+}
+
+.toolbox {
+    background-color: grey;
+    border: 1px solid ;
+  
+    height: 80%;
+    width: 20%;
+    
+    
+     background-color: rgba(0, 0, 0, 0.556);
+   
+    font-size: 12px;
+    cursor: pointer;
+    
+
+}
+
+.sizeI {
+    display: inline-block;
+    border: 1px solid ;
+    margin: 0;
+    width: 40px;
+    height: 36px;
+    padding: 11px 0;
+    background-color: darkgray;
+   
+}
+
+.sizeI:hover {
+    cursor: pointer;
+}
+
+#decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+    text-align: center;
+}
+
+#increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+    text-align: center;
+}
+
+.toolbox #input-wrap {
+    margin: 0px;
+    padding: 0px;
+}
+
+#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 36px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+h1 {
+  
+
+    background-color: rgba(169, 169, 169, 0.119);
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+p {
+
+    letter-spacing: 0.2em;
+    text-align: center;
+    color: white;
+}
+
+i {
+    color: white;
+    float: left;
+    padding: 10px;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+
+
+#reset {
+   
+   position: absolute;
+   bottom: 0;
+   left: 40px;
+   
+  
+   font-size: 17px;
+   color: white;
+   background-color: darkgray;
+   padding: 5px;
+   text-decoration: underline;
+   letter-spacing: 1px;
+}

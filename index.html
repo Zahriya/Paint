@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p>This webpage is used as a painting application where you can make your imagination into reality <br>
+    <b>Increase Tool</b>: May allow the user to increase the application tool spread.<br>
+    <b>Decrease Tool</b>: May decrease the users application tool spread.<br>
+    <b>Clear Button</b>: May allow the user to completely reset their current work.<br>
+    <b>Color tool</b>: May allow the user to change the color of their paint</p>
+    <canvas id="canvas" width="850" height="800"></canvas>
+    <div class="toolbox">
+        <!--Increase and Decrease Button-->
+       <p><i>Size</i></p> <div class="sizeI" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+            <input type="number" id="number" min="0" max="20"/>
+      <div class="sizeI" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+
+        <!--Blur Button Below-->
+        <div class="blur">
+
+        </div>
+
+        <!--Color Picker Button-->
+        <div class="color">
+            
+        <p><i>Color</i></p> <input type="color" id="color">
+        </div>
+
+    <!--Reset Button-->
+        </p><div class="clear">
+        <input type="reset" value="Reset" id="reset" onclick="reset()" />
+        
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
